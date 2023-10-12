@@ -11,11 +11,11 @@ const Counter = () => {
             <div>
                 <button onClick={() => dispatch(increment())}>Increment</button>
                 <button onClick={() => dispatch(decrement())}>Decrement</button>
-                <button onClick={() => dispatch(reset())}>Reset</button>
-            </div>
-            <div style={{
+            </div >
+            <button onClick={() => dispatch(reset())} style={{
                 margin: "12px 0"
-            }}>
+            }}>Reset</button>
+            <div>
                 <button onClick={() => dispatch(incrementByAmount(5))}>IncrementByAmount</button>
                 <button onClick={() => dispatch(decrementByAmount(5))}>DecrementByAmount</button>
             </div>
